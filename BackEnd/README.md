@@ -1,4 +1,4 @@
-Proyecto6: API REST para e-commerce con Autenticación y Autorización
+API REST para e-commerce con Autenticación y Autorización
 
 Descripción: API desarrollada para un sistema de e-commerce que ofrece equipos y servicios tecnológicos. Incluye funcionalidades como autenticación y autorización de usuarios y manejo de productos. Utiliza una base de datos en MongoDB Atlas y está desarrollada con Node.js y Express.js
 
@@ -13,14 +13,22 @@ Requisitos:
 - MongoDB Atlas o una instancia local de MongoDB (Cambiando la URI en las variables de entorno)
 
 Instalación:
-1. Clona el repositorio (git clone https://github.com/Baparedes/Proyecto6.git)
-2. Navega al directorio del proyecto (cd Proyecto6)
+1. Clona el repositorio (git clone https://github.com/Baparedes/Proyecto7.git)
+2. Navega al directorio del proyecto (cd Proyecto7)
 3. Instala las dependencias (npm install)
 4. Crea un archivo .env y configura las variables de entorno:
     - PORT= Puerto donde correrá la aplicación
-    - URI= URI de tu base de datos o de MongoDB Atlas
+    - MONGODB_URI= URI de tu base de datos o de MongoDB Atlas
     - SECRET= Clave secreta para JWT
-5. Inicia la aplicación (npm run dev)
+    - STRIPE_SECRET_KEY= Clave secreta de Stripe
+    - FRONTEND_URL= http://localhost:5173
+    - REACT_BASE_URL_S= http://localhost:5173/pago-exitoso
+    - REACT_BASE_URL_C= http://localhost:5173/pago-fallido
+    - CLOUDINARY_URL= cloudinary://<your_api_key>:<your_api_secret>
+    - CLOUDINARY_CLOUD_NAME= Nombre de tu nube
+    - CLOUDINARY_API_KEY= Clave de la api
+    - CLOUDINARY_API_SECRET= Clave secreta
+5. Inicia la aplicación (npm run start)
 
 Endpoints Principales Usuarios:
 - POST /api/user/registro
@@ -42,6 +50,8 @@ Tecnologías usadas:
 - Bcrypt.js
 - Cors
 - Dotenv
+- Stripe
+- Cloudinary
 
-URL del proyecto levantado en Render:
+URL de la API en Render:
 https://proyecto6-iptn.onrender.com
