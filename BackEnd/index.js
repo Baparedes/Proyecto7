@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 connectDB();
 
 // Middlewares
-app.use(cors({ origin: 'https://proyecto7-production.up.railway.app'}));
+app.use(cors({ origin: 'https://proyecto7-frontend-production.up.railway.app'}));
 app.use(express.json());
 
 app.use("/api/product", productRouter);
