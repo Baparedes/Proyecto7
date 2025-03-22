@@ -5,7 +5,7 @@ Descripción: API desarrollada para un sistema de e-commerce que ofrece equipos 
 Características principales: 
 - Registro de usuarios basada en contraseña encriptada con bcryptjs
 - Autenticación y autorización de usuarios con JSON Web Tokens (JWT)
-- CRUD para productos (Hardware, software y Servicios profesionales)
+- CRUD para productos (En "categoría" puede ser sólo Hardware, software o Servicios profesionales)
 - Base de datos alojada en MongoDB Atlas
 
 Requisitos:
@@ -18,12 +18,12 @@ Instalación:
 3. Instala las dependencias (npm install)
 4. Crea un archivo .env y configura las variables de entorno:
     - PORT= Puerto donde correrá la aplicación
-    - MONGODB_URI= URI de tu base de datos o de MongoDB Atlas
+    - MONGODB_URI= mongodb+srv://baropadi:admin@desarrollowebfullstack.ts4kh.mongodb.net/?retryWrites=true&w=majority&appName=DesarrolloWebFullStack
     - SECRET= Clave secreta para JWT
     - STRIPE_SECRET_KEY= Clave secreta de Stripe
-    - FRONTEND_URL= http://localhost:5173
-    - REACT_BASE_URL_S= http://localhost:5173/pago-exitoso
-    - REACT_BASE_URL_C= http://localhost:5173/pago-fallido
+    - FRONTEND_URL= https://proyecto7-frontend.railway.internal
+    - REACT_BASE_URL_S= https://proyecto7-frontend.railway.internal/pago-exitoso
+    - REACT_BASE_URL_C= https://proyecto7-frontend.railway.internal/pago-fallido
     - CLOUDINARY_URL= cloudinary://<your_api_key>:<your_api_secret>
     - CLOUDINARY_CLOUD_NAME= Nombre de tu nube
     - CLOUDINARY_API_KEY= Clave de la api
