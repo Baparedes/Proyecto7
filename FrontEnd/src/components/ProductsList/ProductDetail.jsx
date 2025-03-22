@@ -11,7 +11,7 @@ import {
   Alert,
 } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
-import UserContext from '../../contexts/users/userContext';
+import UserContext from '../../contexts/users/UserContext';
 import CartContext from '../../contexts/cart/CartContext';
 
 const ProductDetail = () => {

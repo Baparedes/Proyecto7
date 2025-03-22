@@ -1,7 +1,7 @@
 import { Button, Paper, Typography } from "@mui/material"
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import UserContext from "../../contexts/users/userContext";
+import UserContext from "../../contexts/users/UserContext";
 import ProductContext from "../../contexts/products/ProductContext";
 
 const Success = () => {

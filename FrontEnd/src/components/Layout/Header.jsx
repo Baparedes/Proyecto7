@@ -12,7 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import UserContext from '../../contexts/users/userContext';
+import UserContext from '../../contexts/users/UserContext';
 
 function ResponsiveAppBar() {
   const navigate = useNavigate();

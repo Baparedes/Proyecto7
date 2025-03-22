@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import UserContext from '../../contexts/users/userContext';
+import UserContext from '../../contexts/users/UserContext';
 import Button from '@mui/material/Button';
 import { Paper, Typography } from '@mui/material';
 
