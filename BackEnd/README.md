@@ -18,7 +18,7 @@ Instalación:
 3. Instala las dependencias (npm install)
 4. Crea un archivo .env y configura las variables de entorno:
     - PORT= Puerto donde correrá la aplicación
-    - MONGODB_URI= mongodb+srv://baropadi:admin@desarrollowebfullstack.ts4kh.mongodb.net/?retryWrites=true&w=majority&appName=DesarrolloWebFullStack
+    - MONGODB_URI= tu conexion mongo atlas
     - SECRET= Clave secreta para JWT
     - STRIPE_SECRET_KEY= Clave secreta de Stripe
     - FRONTEND_URL= https://proyecto7-frontend.railway.internal
