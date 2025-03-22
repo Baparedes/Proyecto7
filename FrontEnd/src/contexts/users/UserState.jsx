@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
 import axiosClient from '../../config/axios';
-import UserContext from './userContext';
+import UserContext from './UserContext';
 import PropTypes from 'prop-types';
 import userReducer from './UserReducer';
 

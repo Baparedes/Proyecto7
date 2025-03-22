@@ -2,7 +2,7 @@ import { useContext, useEffect, useReducer } from "react";
 import PropTypes from 'prop-types';
 import CartReducer from "./CartReducer";
 import CartContext from "./CartContext";
-import AuthContext from "../users/userContext";
+import AuthContext from "../users/UserContext";
 import axiosClient from '../../config/axios';
 
 const CartState = props => {
