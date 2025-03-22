@@ -17,6 +17,7 @@ import UserContext from '../../contexts/users/UserContext';
 function ResponsiveAppBar() {
   const navigate = useNavigate();
   const { user, logoutUser } = useContext(UserContext);
+  const token = localStorage.getItem('token');
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -34,6 +35,7 @@ function ResponsiveAppBar() {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+    document.activeElement.blur();
   };
 
   const handleLogout = () => {
@@ -172,7 +174,7 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {user ? (
+              {user && token ? (
                 <>
                   <MenuItem onClick={handleCloseUserMenu}>
                     <Link

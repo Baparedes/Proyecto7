@@ -15,15 +15,13 @@ const port = process.env.PORT || 4000;
 connectDB();
 
 // Middlewares
-app.use(
-  cors({ origin: "https://proyecto7-frontend-production.up.railway.app" })
-);
+app.use(cors());
 app.use(express.json());
 
-app.use("/api/product", productRouter);
-app.use("/api/user", userRouter);
-app.use("/api/cart", cartRouter);
-app.use("/api/payments", paymentRouter);
+app.use("/product", productRouter);
+app.use("/user", userRouter);
+app.use("/cart", cartRouter);
+app.use("/payments", paymentRouter);
 
 // Asignación de puerto para servidor
 app.listen(port, () => {
